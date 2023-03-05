@@ -1,0 +1,45 @@
+.nav_bar{
+    background-color: rgb(43, 40, 40);
+    border-radius: 4px;
+   }
+   ul{
+    overflow: auto;  /*the ul design gets overflowed by parentclass design(giving this gets back the bg color)*/
+   }
+   .nav_bar li{
+     float: left; /*to make the list elements to be it in a line we using this..(but the bgcolor goes..) */
+      list-style: none; /*to get that bullets out. */
+      padding: 10px 12px;
+      margin: 6px 6px;
+    }
+    .nav_bar li a{
+         padding: 5px 15px; 
+         text-decoration: none; /*to get away all the underlines*/
+         color: white;
+    }
+    
+    .search{
+      float: right;  /* to make it move to the right end*/
+      color: white;
+      padding: 14px 210px;
+      margin: 1px 0px;
+    }
+    /* #search{
+      float: right;
+    } */
+    .nav_bar input{
+      border: 2px;
+      border-radius: 4px;
+      padding: 7px 41px;
+      width: 257px;
+      height: 10px;
+
+    }
+    .nav_bar li a:hover{
+         background-color: green;
+    }
+    .nav_bar li a img{
+      width: 2px;
+      height: 2px;
+      padding: 2px;
+      margin: 2px;
+    }
