@@ -5,23 +5,27 @@ export default class App extends Component {
   {
     super()
     this.state={
-      name:"Hey Priya",
       count:0
     }
   }
-handlechange=()=>{
-  this.setState({name:"Welcome."})
+handleincrement=()=>{
+  this.setState({count:this.state.count+1})
 }
-handlenum=()=>{
-  this.setState({count:22})
+handledecrement=()=>{
+  this.setState({count:this.state.count-1})
 }
+handlereset=()=>{
+  this.setState({count:0})
+}
+
   render() {
     return (
       <div style={{textAlign:"center"}}>
-      <h1 >{this.state.name}</h1>
-      <h2 >{this.state.count}</h2>
-      <button onClick={this.handlechange} style={{height:"30px"}}>Click here.</button>
-      <button onClick={this.handlenum} style={{height:"30px"}}>Click to change the number..</button>
+      <h1 >{this.state.count}</h1>
+    
+      <button onClick={this.handleincrement} style={{height:"30px"}}>+</button>
+      <button onClick={this.handledecrement} style={{height:"30px"}}>-</button>
+      <button onClick={this.handlereset} style={{height:"30px"}}>RESET</button>
       </div>
     )
   }
